@@ -27,8 +27,8 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     zoomOffset: -1,
 	detectRetina:false,
 }).addTo(mymap);
-//var marker = L.marker([56.308158, 38.133545]).addTo(mymap).on('mouseover', onClick);
-var marker = L.marker([56.308158, 38.133545]).addTo(mymap);
+var marker = L.marker([56.308158, 38.133545]).addTo(mymap).on('mouseover', marker.OpenPopup);
+//var marker = L.marker([56.308158, 38.133545]).addTo(mymap);
 //function onClick(e) {alert(this.latlng);}
 marker.addTo(mymap);
 var marker1 = L.marker([56.308358, 38.133845]).addTo(mymap);
