@@ -35,13 +35,13 @@ var sidebar = L.control.sidebar('sidebar', {
             closeButton: true,
             position: 'left'
         });
-        map.addControl(sidebar);
+        mymap.addControl(sidebar);
 
         setTimeout(function () {
             sidebar.show();
         }, 500);
 
-        var marker = L.marker([56.332304, 38.158553]).addTo(map).on('click', function () {
+        var marker = L.marker([56.332304, 38.158553]).addTo(mymap).on('click', function () {
             sidebar.toggle();
         });
 
