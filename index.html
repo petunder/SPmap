@@ -27,12 +27,10 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	detectRetina:false,
 }).addTo(mymap);
 var marker = L.marker([56.312304, 38.138553]).addTo(mymap);
-marker.on('mouseover', function(ev) {
+
   ev.target.openPopup();
 });
-//marker.on('mouseout', function(ev) {
-//  ev.target.closePopup();
-//});
+
 
 //var marker = L.marker([56.312304, 38.138553]).addTo(mymap);
 //function onClick(e) {alert(this.latlng);}
