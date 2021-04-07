@@ -11,12 +11,16 @@
    crossorigin=""></script>
    
 <style>
-   #mapid{width:100%;height:100%}
+   #mapid{width:auto;height:100%}
+   #sidebar{width:200;height:100%}
 </style>
 </head>
 <body>
-<div id="mapid"></div>
-<div id="sidebar"></div>
+   <div id="wrapper">
+      <div id="mapid"></div>
+      <div id="sidebar"></div>
+   </div>
+
 <script src="../SPmap/leaflet-sidebar-0.2.4/src/L.Control.Sidebar.js"></script>
 <script>
 var mymap = L.map('mapid').setView([56.308158, 38.133545], 14);
